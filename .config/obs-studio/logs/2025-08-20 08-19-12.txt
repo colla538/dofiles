@@ -1,0 +1,133 @@
+08:19:12.850: Platform: Wayland
+08:19:12.850: CPU Name: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+08:19:12.850: CPU Speed: 2288.290MHz
+08:19:12.850: Physical Cores: 2, Logical Cores: 2
+08:19:12.850: Physical Memory: 3787MB Total, 2484MB Free
+08:19:12.850: Kernel Version: Linux 6.16.1-arch1-1
+08:19:12.850: Distribution: "Arch Linux" Unknown
+08:19:12.850: Desktop Environment: Hyprland (Hyprland)
+08:19:12.850: Session Type: wayland
+08:19:12.855: Current Date/Time: 2025-08-20, 08:19:12 AM
+08:19:12.855: Browser Hardware Acceleration: true
+08:19:12.855: Qt Version: 6.9.1 (runtime), 6.9.1 (compiled)
+08:19:12.856: Portable mode: false
+08:19:12.993: OBS 31.1.2 (linux)
+08:19:12.994: ---------------------------------
+08:19:12.997: ---------------------------------
+08:19:12.997: audio settings reset:
+08:19:12.997: 	samples per sec: 48000
+08:19:12.997: 	speakers:        2
+08:19:12.997: 	max buffering:   960 milliseconds
+08:19:12.997: 	buffering type:  dynamically increasing
+08:19:13.002: ---------------------------------
+08:19:13.002: Initializing OpenGL...
+08:19:13.002: Using EGL/Wayland
+08:19:13.322: Initialized EGL 1.5
+08:19:13.382: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 500 (APL 2)
+08:19:13.382: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.1.7-arch1.1, shading language 4.60
+08:19:13.842: ---------------------------------
+08:19:13.842: video settings reset:
+08:19:13.842: 	base resolution:   1366x768
+08:19:13.842: 	output resolution: 1092x614
+08:19:13.842: 	downscale filter:  Bicubic
+08:19:13.842: 	fps:               30/1
+08:19:13.842: 	format:            NV12
+08:19:13.842: 	YUV mode:          Rec. 709/Partial
+08:19:13.843: NV12 texture support enabled
+08:19:13.843: P010 texture support not available
+08:19:13.866: Audio monitoring device:
+08:19:13.866: 	name: Default
+08:19:13.866: 	id: default
+08:19:13.874: ---------------------------------
+08:19:13.897: Failed to load 'en-US' text for module: 'decklink-captions.so'
+08:19:13.917: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+08:19:13.937: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+08:19:13.937: Failed to initialize module 'decklink.so'
+08:19:14.569: [pipewire] Available capture sources:
+08:19:14.569: [pipewire]     - Monitor source
+08:19:14.569: [pipewire]     - Window source
+08:19:14.644: v4l2loopback not installed, virtual camera not registered
+08:19:15.118: VAAPI: API version 1.22
+08:19:15.118: FFmpeg VAAPI H264 encoding supported
+08:19:15.122: FFmpeg VAAPI AV1 encoding not supported
+08:19:15.125: FFmpeg VAAPI HEVC encoding supported
+08:19:15.170: os_dlopen(/usr/lib/obs-plugins/obs-libfdk.so->/usr/lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+08:19:15.170: 
+08:19:15.170: Module '/usr/lib/obs-plugins/obs-libfdk.so' not loaded
+08:19:15.195: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+08:19:15.195: 
+08:19:15.196: NVENC not supported
+08:19:15.196: Failed to initialize module 'obs-nvenc.so'
+08:19:15.531: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: cannot open shared object file: No such file or directory
+08:19:15.531: 
+08:19:15.532: Module '/usr/lib/obs-plugins/obs-websocket.so' not loaded
+08:19:15.606: ---------------------------------
+08:19:15.606:   Loaded Modules:
+08:19:15.606:     text-freetype2.so
+08:19:15.606:     rtmp-services.so
+08:19:15.606:     obs-x264.so
+08:19:15.606:     obs-webrtc.so
+08:19:15.606:     obs-vst.so
+08:19:15.606:     obs-transitions.so
+08:19:15.606:     obs-qsv11.so
+08:19:15.606:     obs-outputs.so
+08:19:15.606:     obs-filters.so
+08:19:15.606:     obs-ffmpeg.so
+08:19:15.606:     linux-v4l2.so
+08:19:15.606:     linux-pulseaudio.so
+08:19:15.606:     linux-pipewire.so
+08:19:15.606:     linux-jack.so
+08:19:15.606:     linux-capture.so
+08:19:15.606:     linux-alsa.so
+08:19:15.606:     image-source.so
+08:19:15.606:     frontend-tools.so
+08:19:15.606:     decklink-output-ui.so
+08:19:15.606:     decklink-captions.so
+08:19:15.606: ---------------------------------
+08:19:15.606: ---------------------------------
+08:19:15.606: Available Encoders:
+08:19:15.606:   Video Encoders:
+08:19:15.606: 	- ffmpeg_svt_av1 (SVT-AV1)
+08:19:15.606: 	- ffmpeg_aom_av1 (AOM AV1)
+08:19:15.606: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+08:19:15.606: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+08:19:15.606: 	- obs_qsv11_v2 (QuickSync H.264)
+08:19:15.606: 	- obs_qsv11_hevc (QuickSync HEVC)
+08:19:15.606: 	- obs_x264 (x264)
+08:19:15.606:   Audio Encoders:
+08:19:15.606: 	- ffmpeg_aac (FFmpeg AAC)
+08:19:15.606: 	- ffmpeg_opus (FFmpeg Opus)
+08:19:15.606: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+08:19:15.606: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+08:19:15.606: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+08:19:15.606: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+08:19:15.606: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+08:19:15.606: ==== Startup complete ===============================================
+08:19:15.621: No scene file found, creating default scene
+08:19:15.691: All scene data cleared
+08:19:15.692: ------------------------------------------------
+08:19:15.720: pulse-input: Server name: 'pulseaudio 17.0-43-g3e2bb'
+08:19:15.720: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+08:19:15.720: pulse-input: Started recording from 'auto_null.monitor' (default)
+08:19:15.723: Switched to scene 'Scene'
+08:19:15.723: Created scene collection 'Untitled' (clean, Untitled.json)
+08:19:15.723: ------------------------------------------------
+08:19:18.268: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+08:19:18.268: 
+08:19:37.030: 
+08:19:37.030: ==== Auto-config wizard testing commencing ======
+
+08:19:39.634: ---------------------------------
+08:19:39.634: video settings reset:
+08:19:39.634: 	base resolution:   1366x768
+08:19:39.634: 	output resolution: 1280x720
+08:19:39.634: 	downscale filter:  Bicubic
+08:19:39.634: 	fps:               30/1
+08:19:39.634: 	format:            NV12
+08:19:39.634: 	YUV mode:          Rec. 709/Partial
+08:19:39.634: NV12 texture support enabled
+08:19:39.634: P010 texture support not available
+08:19:39.674: 
+08:19:39.674: ==== Auto-config wizard testing stopping ========
+
+08:20:59.103: The Wayland connection broke during blocking read event. Did the Wayland compositor die?

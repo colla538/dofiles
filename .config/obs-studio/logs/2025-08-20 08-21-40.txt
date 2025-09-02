@@ -1,0 +1,141 @@
+08:21:40.625: Platform: Wayland
+08:21:40.625: CPU Name: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+08:21:40.625: CPU Speed: 2288.290MHz
+08:21:40.625: Physical Cores: 2, Logical Cores: 2
+08:21:40.625: Physical Memory: 3787MB Total, 2514MB Free
+08:21:40.625: Kernel Version: Linux 6.16.1-arch1-1
+08:21:40.625: Distribution: "Arch Linux" Unknown
+08:21:40.625: Desktop Environment: Hyprland (Hyprland)
+08:21:40.625: Session Type: wayland
+08:21:40.630: Current Date/Time: 2025-08-20, 08:21:40 AM
+08:21:40.631: Browser Hardware Acceleration: true
+08:21:40.631: Qt Version: 6.9.1 (runtime), 6.9.1 (compiled)
+08:21:40.631: Portable mode: false
+08:21:40.755: OBS 31.1.2 (linux)
+08:21:40.755: ---------------------------------
+08:21:40.769: ---------------------------------
+08:21:40.769: audio settings reset:
+08:21:40.769: 	samples per sec: 48000
+08:21:40.769: 	speakers:        2
+08:21:40.769: 	max buffering:   960 milliseconds
+08:21:40.769: 	buffering type:  dynamically increasing
+08:21:40.775: ---------------------------------
+08:21:40.776: Initializing OpenGL...
+08:21:40.776: Using EGL/Wayland
+08:21:41.102: Initialized EGL 1.5
+08:21:41.161: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 500 (APL 2)
+08:21:41.161: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.1.7-arch1.1, shading language 4.60
+08:21:41.254: ---------------------------------
+08:21:41.254: video settings reset:
+08:21:41.254: 	base resolution:   1366x768
+08:21:41.254: 	output resolution: 1280x720
+08:21:41.254: 	downscale filter:  Bicubic
+08:21:41.254: 	fps:               30/1
+08:21:41.254: 	format:            NV12
+08:21:41.254: 	YUV mode:          Rec. 709/Partial
+08:21:41.254: NV12 texture support enabled
+08:21:41.254: P010 texture support not available
+08:21:41.282: Audio monitoring device:
+08:21:41.282: 	name: Default
+08:21:41.282: 	id: default
+08:21:41.284: ---------------------------------
+08:21:41.309: Failed to load 'en-US' text for module: 'decklink-captions.so'
+08:21:41.328: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+08:21:41.347: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+08:21:41.347: Failed to initialize module 'decklink.so'
+08:21:41.935: [pipewire] Available capture sources:
+08:21:41.935: [pipewire]     - Monitor source
+08:21:41.935: [pipewire]     - Window source
+08:21:41.999: v4l2loopback not installed, virtual camera not registered
+08:21:42.430: VAAPI: API version 1.22
+08:21:42.431: FFmpeg VAAPI H264 encoding supported
+08:21:42.433: FFmpeg VAAPI AV1 encoding not supported
+08:21:42.436: FFmpeg VAAPI HEVC encoding supported
+08:21:42.482: os_dlopen(/usr/lib/obs-plugins/obs-libfdk.so->/usr/lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+08:21:42.482: 
+08:21:42.482: Module '/usr/lib/obs-plugins/obs-libfdk.so' not loaded
+08:21:42.509: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+08:21:42.509: 
+08:21:42.509: NVENC not supported
+08:21:42.509: Failed to initialize module 'obs-nvenc.so'
+08:21:42.861: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: cannot open shared object file: No such file or directory
+08:21:42.861: 
+08:21:42.861: Module '/usr/lib/obs-plugins/obs-websocket.so' not loaded
+08:21:42.939: ---------------------------------
+08:21:42.939:   Loaded Modules:
+08:21:42.939:     text-freetype2.so
+08:21:42.939:     rtmp-services.so
+08:21:42.939:     obs-x264.so
+08:21:42.939:     obs-webrtc.so
+08:21:42.939:     obs-vst.so
+08:21:42.939:     obs-transitions.so
+08:21:42.939:     obs-qsv11.so
+08:21:42.939:     obs-outputs.so
+08:21:42.939:     obs-filters.so
+08:21:42.939:     obs-ffmpeg.so
+08:21:42.939:     linux-v4l2.so
+08:21:42.939:     linux-pulseaudio.so
+08:21:42.939:     linux-pipewire.so
+08:21:42.939:     linux-jack.so
+08:21:42.939:     linux-capture.so
+08:21:42.939:     linux-alsa.so
+08:21:42.939:     image-source.so
+08:21:42.939:     frontend-tools.so
+08:21:42.939:     decklink-output-ui.so
+08:21:42.939:     decklink-captions.so
+08:21:42.939: ---------------------------------
+08:21:42.939: ---------------------------------
+08:21:42.939: Available Encoders:
+08:21:42.939:   Video Encoders:
+08:21:42.939: 	- ffmpeg_svt_av1 (SVT-AV1)
+08:21:42.939: 	- ffmpeg_aom_av1 (AOM AV1)
+08:21:42.939: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+08:21:42.939: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+08:21:42.939: 	- obs_qsv11_v2 (QuickSync H.264)
+08:21:42.939: 	- obs_qsv11_hevc (QuickSync HEVC)
+08:21:42.939: 	- obs_x264 (x264)
+08:21:42.939:   Audio Encoders:
+08:21:42.939: 	- ffmpeg_aac (FFmpeg AAC)
+08:21:42.939: 	- ffmpeg_opus (FFmpeg Opus)
+08:21:42.939: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+08:21:42.939: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+08:21:42.939: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+08:21:42.939: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+08:21:42.939: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+08:21:42.939: ==== Startup complete ===============================================
+08:21:43.038: All scene data cleared
+08:21:43.038: ------------------------------------------------
+08:21:43.045: pulse-input: Server name: 'pulseaudio 17.0-43-g3e2bb'
+08:21:43.046: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+08:21:43.046: pulse-input: Started recording from 'auto_null.monitor' (default)
+08:21:43.046: [Loaded global audio device]: 'Desktop Audio'
+08:21:43.050: Switched to scene 'Scene'
+08:21:43.051: ------------------------------------------------
+08:21:43.051: Loaded scenes:
+08:21:43.051: - scene 'Scene':
+08:21:43.051: ------------------------------------------------
+08:21:45.550: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+08:21:45.550: 
+08:21:48.181: Creating a popup with a parent, QWidgetWindow(0x56180e4577b0, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x561810e67590, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+08:21:54.169: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x56180e73ad90 with focusing surface 0x561810ea9ac0
+08:21:55.332: PipeWire initialized
+08:21:55.345: User added source 'Screen Capture (PipeWire)' (pipewire-screen-capture-source) to scene 'Scene'
+08:21:55.517: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x561810c05c50 with focusing surface 0x56180e73ad90
+08:21:55.588: [pipewire] Screencast session created
+08:22:04.387: [pipewire] Asking for monitor and window
+08:22:04.496: [pipewire] source selected, setting up screencast
+08:22:04.546: [pipewire] Server version: 1.4.7
+08:22:04.547: [pipewire] Library version: 1.4.7
+08:22:04.547: [pipewire] Header version: 1.4.7
+08:22:04.547: [pipewire] Created stream 0x561810302de0
+08:22:04.548: [pipewire] Stream 0x561810302de0 state: "connecting" (error: none)
+08:22:04.549: [pipewire] Playing stream 0x561810302de0
+08:22:04.552: [pipewire] Stream 0x561810302de0 state: "paused" (error: none)
+08:22:19.896: User Removed source 'Screen Capture (PipeWire)' (pipewire-screen-capture-source) from scene 'Scene'
+08:22:19.902: [pipewire] Stream 0x561810302de0 state: "unconnected" (error: none)
+08:22:26.596: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x56180e73ad90 with focusing surface 0x561810e0d6a0
+08:22:30.032: PipeWire initialized
+08:22:30.048: User added source 'Screen Capture (PipeWire)' (pipewire-screen-capture-source) to scene 'Scene'
+08:22:30.123: [pipewire] Screencast session created
+08:22:32.082: PipeWire initialized
+08:22:40.357: [pipewire] Asking for monitor and window

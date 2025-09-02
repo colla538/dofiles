@@ -1,0 +1,13 @@
+# pywal theme for btop
+theme[main_bg]="#0F1516"
+theme[main_fg]="#c3a4aa"
+theme[title]="#244343"
+theme[hi_fg]="#243E41"
+theme[good_fg]="#243E41"
+theme[warning_fg]="#1F3B6B"
+theme[critical_fg]="#1C384A"
+theme[selected_bg]="#214554"
+theme[selected_fg]="#0F1516"
+theme[graph_line]="#5F4040"
+theme[meter_bg]="#0F1516"
+theme[meter_fg]="#243E41"

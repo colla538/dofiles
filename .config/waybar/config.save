@@ -1,0 +1,35 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "battery", "tray"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "hyprctl dispatch workspace {name}"
+  },
+
+  "clock": {
+    "format": "{:%a %d %b  %I:%M %p}",
+    "tooltip-format": "{:%Y-%m-%d}"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " Muted"
+  },
+
+  "network": {
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈁 Wired",
+    "format-disconnected": "󰖪 Disconnected"
+  },
+
+  "battery": {
+    "format": "  {capacity}%",
+    "format-charging": " {capacity}%"
+  },
+
+  "tray": {}
+}
