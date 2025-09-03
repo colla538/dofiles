@@ -1,9 +1,6 @@
-2025/09/02-14:16:14.249 cd0e Reusing MANIFEST /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/MANIFEST-000001
-2025/09/02-14:16:14.271 cd0e Recovering log #120
-2025/09/02-14:16:14.272 cd0e Reusing old log /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/000120.log 
-2025/09/02-14:27:56.893 ccfd Level-0 table #125: started
-2025/09/02-14:27:56.910 ccfd Level-0 table #125: 16240 bytes OK
-2025/09/02-14:27:56.915 ccfd Delete type=0 #120
-2025/09/02-17:42:49.089 ccfd Level-0 table #127: started
-2025/09/02-17:42:49.105 ccfd Level-0 table #127: 17398 bytes OK
-2025/09/02-17:42:49.107 ccfd Delete type=0 #124
+2025/09/04-07:28:34.441 899 Reusing MANIFEST /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/MANIFEST-000001
+2025/09/04-07:28:34.502 899 Recovering log #126
+2025/09/04-07:28:34.502 899 Reusing old log /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/000126.log 
+2025/09/04-07:29:36.477 899 Level-0 table #130: started
+2025/09/04-07:29:36.497 899 Level-0 table #130: 20610 bytes OK
+2025/09/04-07:29:36.503 899 Delete type=0 #126

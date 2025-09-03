@@ -1,36 +1,9 @@
-2025/09/02-08:43:17.854 ba0f Reusing MANIFEST /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/MANIFEST-000001
-2025/09/02-08:43:17.872 ba0f Recovering log #109
-2025/09/02-08:43:17.872 ba0f Reusing old log /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/000109.log 
-2025/09/02-08:48:58.369 ba0e Level-0 table #112: started
-2025/09/02-08:48:58.384 ba0e Level-0 table #112: 16149 bytes OK
-2025/09/02-08:48:58.388 ba0e Delete type=0 #109
-2025/09/02-08:48:58.389 ba0e Compacting 4@0 + 1@1 files
-2025/09/02-08:48:58.469 ba0e Generated table #113@0: 288 keys, 1557625 bytes
-2025/09/02-08:48:58.469 ba0e Compacted 4@0 + 1@1 files => 1557625 bytes
-2025/09/02-08:48:58.473 ba0e compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/09/02-08:48:58.473 ba0e Delete type=2 #100
-2025/09/02-08:48:58.473 ba0e Delete type=2 #103
-2025/09/02-08:48:58.473 ba0e Delete type=2 #106
-2025/09/02-08:48:58.474 ba0e Delete type=2 #108
-2025/09/02-08:48:58.474 ba0e Delete type=2 #112
-2025/09/02-10:55:24.965 ba0f Level-0 table #115: started
-2025/09/02-10:55:24.982 ba0f Level-0 table #115: 24484 bytes OK
-2025/09/02-10:55:24.986 ba0f Delete type=0 #111
-2025/09/02-11:14:46.067 ba0e Level-0 table #117: started
-2025/09/02-11:14:46.082 ba0e Level-0 table #117: 23263 bytes OK
-2025/09/02-11:14:46.086 ba0e Delete type=0 #114
-2025/09/02-11:34:29.207 ba0f Level-0 table #119: started
-2025/09/02-11:34:29.255 ba0f Level-0 table #119: 20084 bytes OK
-2025/09/02-11:34:29.259 ba0f Delete type=0 #116
-2025/09/02-14:06:27.871 ba0f Level-0 table #121: started
-2025/09/02-14:06:27.887 ba0f Level-0 table #121: 14778 bytes OK
-2025/09/02-14:06:27.892 ba0f Delete type=0 #118
-2025/09/02-14:06:27.893 ba0e Compacting 4@0 + 1@1 files
-2025/09/02-14:06:27.988 ba0e Generated table #122@0: 289 keys, 1563701 bytes
-2025/09/02-14:06:27.988 ba0e Compacted 4@0 + 1@1 files => 1563701 bytes
-2025/09/02-14:06:27.992 ba0e compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/09/02-14:06:27.992 ba0e Delete type=2 #121
-2025/09/02-14:06:27.993 ba0e Delete type=2 #119
-2025/09/02-14:06:27.993 ba0e Delete type=2 #117
-2025/09/02-14:06:27.993 ba0e Delete type=2 #115
-2025/09/02-14:06:27.993 ba0e Delete type=2 #113
+2025/09/02-14:16:14.249 cd0e Reusing MANIFEST /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/MANIFEST-000001
+2025/09/02-14:16:14.271 cd0e Recovering log #120
+2025/09/02-14:16:14.272 cd0e Reusing old log /home/danish/.config/falkon/profiles/default/Local Storage/leveldb/000120.log 
+2025/09/02-14:27:56.893 ccfd Level-0 table #125: started
+2025/09/02-14:27:56.910 ccfd Level-0 table #125: 16240 bytes OK
+2025/09/02-14:27:56.915 ccfd Delete type=0 #120
+2025/09/02-17:42:49.089 ccfd Level-0 table #127: started
+2025/09/02-17:42:49.105 ccfd Level-0 table #127: 17398 bytes OK
+2025/09/02-17:42:49.107 ccfd Delete type=0 #124
