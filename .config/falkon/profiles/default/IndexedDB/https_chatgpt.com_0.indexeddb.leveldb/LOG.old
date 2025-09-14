@@ -1,3 +1,4 @@
-2025/09/08-10:53:41.768 2f5 Reusing MANIFEST /home/danish/.config/falkon/profiles/default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/09/08-10:53:41.769 2f5 Recovering log #4
-2025/09/08-10:53:41.769 2f5 Reusing old log /home/danish/.config/falkon/profiles/default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/000004.log 
+2025/09/10-13:51:12.391 1c6d Reusing MANIFEST /home/danish/.config/falkon/profiles/default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/10-13:51:12.392 1c6d Recovering log #9
+2025/09/10-13:51:12.393 1c6d Reusing old log /home/danish/.config/falkon/profiles/default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/000009.log 
+2025/09/10-13:51:12.394 1c6d Delete type=2 #5

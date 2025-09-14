@@ -1,3 +1,4 @@
-2025/09/08-10:17:33.711 2f5 Reusing MANIFEST /home/danish/.config/falkon/profiles/default/Session Storage/MANIFEST-000001
-2025/09/08-10:17:33.712 2f5 Recovering log #7
-2025/09/08-10:17:33.715 2f5 Reusing old log /home/danish/.config/falkon/profiles/default/Session Storage/000007.log 
+2025/09/14-12:28:43.594 6304 Reusing MANIFEST /home/danish/.config/falkon/profiles/default/Session Storage/MANIFEST-000001
+2025/09/14-12:28:43.594 6304 Recovering log #7
+2025/09/14-12:28:43.599 6304 (ignoring error) /home/danish/.config/falkon/profiles/default/Session Storage/000007.log: dropping 15 bytes; Corruption: missing start of fragmented record(2)
+2025/09/14-12:28:43.600 6304 Reusing old log /home/danish/.config/falkon/profiles/default/Session Storage/000007.log 

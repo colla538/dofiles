@@ -1,6 +1,6 @@
 # dofiles
 
-# HOW TO EXTRACT
+## HOW TO EXTRACT
 
 1. install stow
  
