@@ -12,7 +12,7 @@ sudo pacman -S stow
 ```sh
 git clone https://github.com/colla538/dofiles.git
 ```
-3. cd to your desired directory. NOTE: Replace ''dir'' with your own desired dir
+3. cd to your desired directory. NOTE: Replace ``dir`` with your own desired dir
 
 ```sh
 cd dir/
