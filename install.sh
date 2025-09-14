@@ -1,9 +1,7 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
 
-# 1. Install yay
+# clone yay if not installed
 if ! command -v yay &>/dev/null; then
-  sudo pacman -S --needed --noconfirm git base-devel
   git clone https://aur.archlinux.org/yay.git
   cd yay
   makepkg -si --noconfirm
@@ -11,27 +9,42 @@ if ! command -v yay &>/dev/null; then
   rm -rf yay
 fi
 
-# 2. Install packages from DEPENDENCIES.md
-if [[ -f DEPENDENCIES.md ]]; then
-  xargs -r yay -S --needed --noconfirm < DEPENDENCIES.md
+# split pacman vs aur packages
+PACMAN_PKGS=$(cat DEPENDENCIES.md | while read pkg; do
+  pacman -Si --quiet "$pkg" &>/dev/null && echo "$pkg"
+done)
+
+AUR_PKGS=$(cat DEPENDENCIES.md | while read pkg; do
+  pacman -Si --quiet "$pkg" &>/dev/null || echo "$pkg"
+done)
+
+# install pacman packages
+if [ -n "$PACMAN_PKGS" ]; then
+  sudo pacman -S --needed --noconfirm $PACMAN_PKGS
 fi
 
-# 3. Stow configs (restow for idempotency)
-if pacman -Qi stow &>/dev/null || sudo pacman -S --needed --noconfirm stow; then
-  for dir in */; do
-    [[ "$dir" =~ ^(\.git|yay)/$ ]] && continue
-    [[ -d "$dir" ]] && stow --restow -v -t "$HOME" "$dir"
-  done
+# ask before installing aur packages
+if [ -n "$AUR_PKGS" ]; then
+  echo "AUR packages detected: $AUR_PKGS"
+  read -p "Do you want to install them? [y/N]: " choice
+  if [[ "$choice" =~ ^[Yy]$ ]]; then
+    yay -S --needed $AUR_PKGS
+  fi
 fi
 
-# 4. Install pipx and mov-cli stuff
+# stow configs
+if command -v stow &>/dev/null; then
+  stow -d dofiles -t ~ */
+else
+  echo "stow not found, skipping config stow"
+fi
+
+# install pipx and mov-cli packages
 if ! command -v pipx &>/dev/null; then
-  sudo pacman -S --needed --noconfirm python-pipx
-  pipx ensurepath
+  python -m pip install --user pipx
+  python -m pipx ensurepath
 fi
 
-if ! pipx list | grep -q mov-cli; then
-  pipx install mov-cli
-  pipx inject mov-cli mov-cli-youtube mov-cli-files
-fi
+pipx install mov-cli
+pipx inject mov-cli mov-cli-youtube mov-cli-files
 
