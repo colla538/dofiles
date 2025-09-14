@@ -13,26 +13,14 @@ fi
 
 # 2. Install packages from DEPENDENCIES.md
 if [[ -f DEPENDENCIES.md ]]; then
-  grep -oE '^[[:space:]]*[-*]?[[:space:]]*([a-zA-Z0-9@._+-]+)' DEPENDENCIES.md | \
-  sed -E 's/^[[:space:]]*[-*]?[[:space:]]*//' | while read -r pkg; do
-    [[ -z "$pkg" ]] && continue
-    [[ "$pkg" =~ ^(linux|base|base-devel|grub|systemd|glibc)$ ]] && continue
-    if ! pacman -Qi "$pkg" &>/dev/null && ! yay -Qi "$pkg" &>/dev/null; then
-      yay -S --needed --noconfirm "$pkg"
-    fi
-  done
+  xargs -r yay -S --needed --noconfirm < DEPENDENCIES.md
 fi
 
-# 3. Stow configs (all dirs except .git and script/docs files)
+# 3. Stow configs (restow for idempotency)
 if pacman -Qi stow &>/dev/null || sudo pacman -S --needed --noconfirm stow; then
   for dir in */; do
-    case "$dir" in
-      .git*/|*/ ) : ;;
-      *)
-        # Skip files like DEPENDENCIES.md or install.sh
-        [[ -d "$dir" ]] && stow -v -t "$HOME" "$dir"
-        ;;
-    esac
+    [[ "$dir" =~ ^(\.git|yay)/$ ]] && continue
+    [[ -d "$dir" ]] && stow --restow -v -t "$HOME" "$dir"
   done
 fi
 
@@ -46,3 +34,4 @@ if ! pipx list | grep -q mov-cli; then
   pipx install mov-cli
   pipx inject mov-cli mov-cli-youtube mov-cli-files
 fi
+
