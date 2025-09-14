@@ -9,13 +9,15 @@ if ! command -v yay &>/dev/null; then
   rm -rf yay
 fi
 
-# split pacman vs aur packages
+# separate pacman and AUR packages using yay -Si
 PACMAN_PKGS=$(cat DEPENDENCIES.md | while read pkg; do
-  pacman -Si --quiet "$pkg" &>/dev/null && echo "$pkg"
+  repo=$(yay -Si "$pkg" 2>/dev/null | awk -F': ' '/^Repository/{print $2}')
+  [[ "$repo" == "core" || "$repo" == "extra" || "$repo" == "community" || "$repo" == "multilib" ]] && echo "$pkg"
 done)
 
 AUR_PKGS=$(cat DEPENDENCIES.md | while read pkg; do
-  pacman -Si --quiet "$pkg" &>/dev/null || echo "$pkg"
+  repo=$(yay -Si "$pkg" 2>/dev/null | awk -F': ' '/^Repository/{print $2}')
+  [[ "$repo" == "AUR" ]] && echo "$pkg"
 done)
 
 # install pacman packages
@@ -23,7 +25,7 @@ if [ -n "$PACMAN_PKGS" ]; then
   sudo pacman -S --needed --noconfirm $PACMAN_PKGS
 fi
 
-# ask before installing aur packages
+# install aur packages
 if [ -n "$AUR_PKGS" ]; then
   echo "AUR packages detected: $AUR_PKGS"
   read -p "Do you want to install them? [y/N]: " choice
