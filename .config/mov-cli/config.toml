@@ -30,6 +30,7 @@ yt-pytube = "yt.pytube"
 yt-uhd = { namespace = "yt.yt-dlp", options.audio = false, options.video = true, options.shorts = false, options.quality = "1080p" }
 yt-music = {namespace = "yt.yt-dlp", options.audio = true, options.shorts = false }
 files = "mov-cli-files"
+consumet = "consumet-mc"
 
 # options.quality = 720
 
